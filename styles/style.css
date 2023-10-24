@@ -53,3 +53,22 @@ html {
   justify-self: end;
   max-inline-size: 355px;
 }
+
+.main {
+  padding-inline: var(--padding-unit);
+}
+
+.case {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(768px, 100%/2), 1fr));
+}
+
+.case__title {
+  font-size: var(--base-font-size);
+  font-weight: 700;
+}
+
+.case__item-title {
+  font-size: var(--base-font-size);
+  font-weight: 700;
+}
