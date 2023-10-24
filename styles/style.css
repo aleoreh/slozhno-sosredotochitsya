@@ -17,7 +17,7 @@ html {
 .header {
   display: grid;
   grid-template-rows: minmax(228px, 1fr) auto minmax(228px, 1fr);
-  padding-inline: 10px;
+  padding-inline: var(--padding-unit);
 }
 
 .header__theme-menu {
@@ -36,6 +36,7 @@ html {
   border: none;
   padding-inline: 13px;
   line-height: 130%;
+  font-size: var(--base-font-size);
 }
 
 .header__caption {
@@ -45,7 +46,7 @@ html {
 }
 
 .header__title {
-  font-size: 1em;
+  font-size: var(--base-font-size);
   font-weight: 700;
   align-self: center;
   line-height: 150%;
