@@ -1,5 +1,33 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+*,
+*::before,
+*::after {
+  outline: 1px dotted pink;
+}
+
+html {
+  font-family: "IBM Plex mono", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
 
 .page {
   background-color: var(--bg-color);
+  padding-block: 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 238px 192px 228px;
+  padding-inline: 10px;
+}
+
+.header__caption {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* 116 - 120 px */
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header__title {
+  font-size: 1em;
+  font-weight: 700;
 }
