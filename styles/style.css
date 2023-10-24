@@ -6,19 +6,36 @@
 
 html {
   font-family: "IBM Plex mono", Helvetica, Arial, sans-serif;
-  font-size: 18px;
 }
 
 .page {
   background-color: var(--bg-color);
+  color: var(--color);
   padding-block: 10px;
 }
 
 .header {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 238px 192px 228px;
+  grid-template-rows: minmax(228px, 1fr) auto minmax(228px, 1fr);
   padding-inline: 10px;
+}
+
+.header__theme-menu {
+  align-self: center;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  background: none;
+  border: none;
+  padding-inline: 13px;
+  line-height: 130%;
 }
 
 .header__caption {
@@ -30,4 +47,8 @@ html {
 .header__title {
   font-size: 1em;
   font-weight: 700;
+  align-self: center;
+  line-height: 150%;
+  justify-self: end;
+  max-inline-size: 355px;
 }
