@@ -18,6 +18,13 @@ html {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* 116 - 120 px */
   font-weight: 700;
   line-height: 82.5%;
+  text-shadow: 4px 4px 0px var(--accent-color);
+  color: var(--alt-color);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
 }
 
 .page {
@@ -26,7 +33,52 @@ html {
 }
 
 .header {
+  position: relative;
   grid-template-rows: 1fr auto 1fr;
+  border: 1px solid transparent;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: var(--padding-unit);
+  inset-block-start: var(--padding-unit);
+  inline-size: 25px;
+  block-size: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: var(--padding-unit);
+  inset-block-end: var(--padding-unit);
+  inline-size: 25px;
+  block-size: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header__rec-dot {
+  position: absolute;
+  inset-inline-end: 9px;
+  inset-block-start: 9px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.header__rec-dot > span {
+  display: block;
+  inline-size: 9px;
+  block-size: 9px;
+  margin-inline-start: 11px;
+  margin-inline-end: 10px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .header__theme-menu {
@@ -37,22 +89,29 @@ html {
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
+  inline-size: 70px;
+  block-size: 26px;
   background: none;
   border: none;
   padding-inline: 13px;
-  line-height: 130%;
   font-size: var(--base-font-size);
+  text-transform: lowercase;
+  line-height: 100%;
+  padding-block-end: 10px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
 }
 
 .header__title {
   font-size: var(--base-font-size);
   font-weight: 700;
   align-self: center;
-  line-height: 150%;
   justify-self: end;
   max-inline-size: 355px;
 }
