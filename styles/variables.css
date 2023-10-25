@@ -11,3 +11,9 @@
   --padding-unit: 10px;
   --base-font-size: 18px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --padding-unit: 20px;
+  }
+}

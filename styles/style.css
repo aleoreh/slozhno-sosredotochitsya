@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  /* outline: 1px dotted pink; */
+  outline: 1px dotted pink;
 }
 
 html {
@@ -23,6 +23,13 @@ html {
 
 .caption_header {
   text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+@media (width >= 768px) {
+  .caption_header {
+    position: relative;
+    inset-inline-start: calc(var(--padding-unit) * (-1));
+  }
 }
 
 .caption_footer {
@@ -72,10 +79,16 @@ html {
   margin-block-end: 40px;
 }
 
+@media (width >= 768px) {
+  .header {
+    margin-block-end: 60px;
+  }
+}
+
 .header__rec-dot {
   position: absolute;
-  inset-inline-end: 9px;
-  inset-block-start: 9px;
+  inset-inline-end: calc(var(--padding-unit) - 1px);
+  inset-block-start: calc(var(--padding-unit) - 1px);
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -128,11 +141,23 @@ html {
   max-inline-size: 355px;
 }
 
+@media (width <= 768px) {
+  .header__title {
+    max-inline-size: 364px;
+  }
+}
+
 .main {
   display: grid;
   gap: 50px;
   padding-inline: var(--padding-unit);
   margin-block-end: 40px;
+}
+
+@media (width >= 768px) {
+  .main {
+    gap: 80px;
+  }
 }
 
 .case {
@@ -148,6 +173,18 @@ html {
 
 .case_image-list .case__inner-item {
   line-height: 0;
+}
+
+@media (width >= 768px) {
+  .case:not(.case_no-split) {
+    grid: auto / minmax(236px, auto) minmax(472px, auto);
+  }
+  .case_no-split {
+    grid: auto / minmax(728px, auto);
+  }
+  .case_no-split .case__title {
+    max-inline-size: 236px;
+  }
 }
 
 .case__title {
@@ -190,6 +227,29 @@ html {
   gap: 10px;
 }
 
+@media (width >= 768px) {
+  .case__inner-list_narrowed {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  .case__inner-item_1 {
+    grid-column: 1 / 3;
+  }
+  .case__inner-item_2 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+  .case__inner-item_3 {
+    grid-row: 2 / 4;
+  }
+  .case__inner-item_4 {
+    grid-column: 2;
+  }
+  .case__inner-item_5 {
+    grid-column: 2 / 4;
+  }
+}
+
 .case__inner-item-title {
   font-size: var(--base-font-size);
   font-weight: 400;
@@ -206,6 +266,7 @@ html {
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
+  block-size: 100%;
 }
 
 .footer {
