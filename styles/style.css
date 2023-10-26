@@ -245,7 +245,8 @@ html {
   gap: calc(var(--gap-unit) * 2);
 }
 
-.case__item-title {
+.case__item-title,
+.case__inner-title {
   font-size: var(--base-font-size);
   font-weight: 700;
   margin-block-end: var(--gap-unit);
@@ -270,13 +271,13 @@ html {
   gap: var(--gap-unit);
 }
 
-.case__inner-title {
+.case__inner-item-title {
   font-size: var(--base-font-size);
   font-weight: 400;
   margin-block-end: var(--gap-unit);
 }
 
-.case__inner-content {
+.case__inner-item-content {
   font-size: var(--base-font-size);
   font-weight: 400;
   line-height: 130%;
@@ -307,6 +308,8 @@ html {
   .case_3 .case__item-title,
   .case_3 .case__inner-list {
     grid-column: 2 / 3;
+    grid-row: span 2;
+    align-self: start;
   }
   .case_4 .case__inner-list {
     grid-template-columns: auto auto auto;
