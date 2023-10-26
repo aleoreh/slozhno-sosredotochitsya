@@ -92,7 +92,7 @@ html {
 
 .page {
   background-color: var(--bg-color);
-  color: var(--color);
+  color: var(--primary-color);
 }
 
 /* ~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
