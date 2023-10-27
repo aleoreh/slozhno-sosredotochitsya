@@ -98,6 +98,14 @@ html {
   text-decoration: none;
 }
 
+.text-link:hover {
+  box-shadow: var(--color) 0 1px;
+}
+
+.text-link:focus-visible {
+  outline: 1px solid var(--color);
+  outline-offset: -1px;
+}
 /* ~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
 
 .header {
@@ -150,10 +158,24 @@ html {
   line-height: 100%;
   padding-block-end: var(--gap-unit);
   color: var(--accent-color);
+  cursor: pointer;
 }
 
-.header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button_active,
+.header__theme-menu-button_active:hover {
+  outline: 1px solid var(--accent-color);
+  cursor: default;
+}
+
+.header__theme-menu-button:not(
+    .header__theme-menu-button_active
+  ):focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--accent-color);
 }
 
 .header__title {
