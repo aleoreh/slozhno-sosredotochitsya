@@ -153,10 +153,10 @@ html {
   background: none;
   border: none;
   padding-inline: 13px;
+  padding-block-end: 5%;
   font-size: var(--base-font-size);
   text-transform: lowercase;
   line-height: 100%;
-  padding-block-end: var(--gap-unit);
   color: var(--accent-color);
   cursor: pointer;
 }
