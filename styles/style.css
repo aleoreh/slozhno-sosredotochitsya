@@ -99,11 +99,11 @@ html {
 }
 
 .text-link:hover {
-  box-shadow: var(--color) 0 1px;
+  box-shadow: var(--primary-color) 0 1px;
 }
 
 .text-link:focus-visible {
-  outline: 1px solid var(--color);
+  outline: 1px solid var(--primary-color);
   outline-offset: -1px;
 }
 /* ~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
@@ -123,6 +123,7 @@ html {
   align-items: center;
   text-transform: uppercase;
   line-height: 150%;
+  color: var(--accent-color);
 }
 
 .header__rec-dot > span {
