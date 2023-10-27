@@ -407,8 +407,7 @@ html {
     justify-content: flex-end;
   }
   .case_4 .case__inner-item:nth-child(5) .case__inner-image {
-    justify-self: flex-start;
-    height: calc(100% - 5px);
+    block-size: calc(100% - 5px);
   }
 }
 
