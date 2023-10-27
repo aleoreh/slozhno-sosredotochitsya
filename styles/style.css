@@ -148,8 +148,8 @@ html {
 }
 
 .header__theme-menu-button {
-  inline-size: 70px;
-  block-size: 26px;
+  min-inline-size: 70px;
+  min-block-size: 26px;
   background: none;
   border: none;
   padding-inline: 13px;
