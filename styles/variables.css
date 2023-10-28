@@ -4,10 +4,6 @@
 */
 
 :root {
-  --bg-color: #000028;
-  --primary-color: #f1b2ce;
-  --alt-color: #db00ff;
-  --accent-color: #ff0070;
   --gap-unit: 10px;
   --base-padding: var(--gap-unit);
   --base-font-size: 18px;
