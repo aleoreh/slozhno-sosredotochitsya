@@ -139,6 +139,22 @@ html {
   box-shadow: 0 0 4px 2px var(--decor-color);
 }
 
+.theme_light .header__rec-dot {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .theme_auto .header__rec-dot {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .header__rec-dot {
+    display: flex;
+  }
+}
+
 .header__theme-menu {
   place-self: center end;
 }
