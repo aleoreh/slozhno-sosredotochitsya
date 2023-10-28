@@ -120,9 +120,9 @@ html {
 
 .header__rec-dot {
   position: absolute;
+  display: flex;
   inset-inline-end: calc(var(--gap-unit) - 1px);
   inset-block-start: calc(var(--gap-unit) - 1px);
-  display: flex;
   align-items: center;
   text-transform: uppercase;
   line-height: 150%;
@@ -181,10 +181,10 @@ html {
 }
 
 .header__title {
-  font-size: var(--base-font-size);
   font-weight: 700;
-  place-self: center end;
   max-inline-size: 355px;
+  place-self: center end;
+  font-size: var(--base-font-size);
 }
 
 @media (width < 768px) {
