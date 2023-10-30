@@ -1,6 +1,7 @@
 .page.theme_light {
   --bg-color: #fff1f7;
   --decor-color: #353430;
+  --decor-color-40: #35343066;
   --caption-color: #ffc2e6;
   --caption-shadow-color: #ff0070;
   --accent-bg-color: #ff8dcb;
@@ -15,6 +16,7 @@
   :root {
     --bg-color: #fff1f7;
     --decor-color: #353430;
+    --decor-color-40: #35343066;
     --caption-color: #ffc2e6;
     --caption-shadow-color: #ff0070;
     --accent-bg-color: #ff8dcb;
@@ -27,3 +29,4 @@
     background-image: url("../images/cover-image-light.png");
   }
 }
+
