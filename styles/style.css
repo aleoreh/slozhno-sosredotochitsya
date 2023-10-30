@@ -50,26 +50,26 @@ html {
   }
 }
 
-.bordered {
+.decorated-zone {
   position: relative;
 }
 
-.bordered::before,
-.bordered::after {
+.decorated-zone::before,
+.decorated-zone::after {
   content: "";
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
 }
 
-.bordered::before {
+.decorated-zone::before {
   inset-inline-end: var(--gap-unit);
   inset-block-start: var(--gap-unit);
   border-block-start: 1px solid var(--decor-color);
   border-inline-end: 1px solid var(--decor-color);
 }
 
-.bordered::after {
+.decorated-zone::after {
   inset-inline-start: var(--gap-unit);
   inset-block-end: var(--gap-unit);
   border-block-end: 1px solid var(--decor-color);
@@ -77,12 +77,12 @@ html {
 }
 
 @media (width >= 768px) {
-  .bordered::before {
+  .decorated-zone::before {
     inset-inline-end: calc(var(--gap-unit) * 2);
     inset-block-start: calc(var(--gap-unit) * 2);
   }
 
-  .bordered::after {
+  .decorated-zone::after {
     inset-inline-start: calc(var(--gap-unit) * 2);
     inset-block-end: calc(var(--gap-unit) * 2);
   }
