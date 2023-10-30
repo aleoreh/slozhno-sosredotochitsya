@@ -122,6 +122,7 @@ html {
 .header__rec-dot {
   position: absolute;
   display: flex;
+  gap: 1px;
   inset-inline-end: calc(var(--gap-unit));
   inset-block-start: calc(var(--gap-unit));
   align-items: center;
@@ -130,7 +131,8 @@ html {
   color: var(--decor-color);
 }
 
-.header__rec-dot > span {
+.header__rec-dot::after {
+  content: "";
   display: block;
   inline-size: 9px;
   block-size: 9px;
