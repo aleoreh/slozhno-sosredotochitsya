@@ -2,3 +2,15 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --gap-unit: 10px;
+  --base-padding: var(--gap-unit);
+  --base-font-size: 18px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --base-padding: calc(var(--gap-unit) * 2);
+  }
+}
