@@ -120,8 +120,8 @@ html {
 .header__rec-dot {
   position: absolute;
   display: flex;
-  inset-inline-end: calc(var(--gap-unit) - 1px);
-  inset-block-start: calc(var(--gap-unit) - 1px);
+  inset-inline-end: calc(var(--gap-unit));
+  inset-block-start: calc(var(--gap-unit));
   align-items: center;
   text-transform: uppercase;
   line-height: 1.5;
@@ -169,7 +169,7 @@ html {
   min-block-size: 26px;
   background: none;
   border: none;
-  padding-inline: 13px;
+  padding-inline: 12px;
   padding-block-end: 5%;
   font-size: var(--base-font-size);
   text-transform: lowercase;
@@ -179,12 +179,12 @@ html {
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--decor-color);
+  border: 1px solid var(--decor-color);
 }
 
 .header__theme-menu-button_active,
 .header__theme-menu-button_active:hover {
-  outline: 1px solid var(--decor-color);
+  border: 1px solid var(--decor-color);
   cursor: default;
 }
 
