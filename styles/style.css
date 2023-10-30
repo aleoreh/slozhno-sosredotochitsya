@@ -94,12 +94,16 @@ html {
 }
 
 .text-link {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-bg-color);
   text-decoration: none;
 }
 
 .text-link:hover {
   box-shadow: var(--primary-color) 0 1px;
+}
+
+.text-link:focus {
+  outline: none;
 }
 
 .text-link:focus-visible {
@@ -177,12 +181,14 @@ html {
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--decor-color);
+  outline: 1px solid var(--decor-color);
+  outline-offset: -1px;
 }
 
 .header__theme-menu-button_active,
 .header__theme-menu-button_active:hover {
-  border: 1px solid var(--decor-color);
+  outline: 1px solid var(--decor-color);
+  outline-offset: -1px;
   pointer-events: none;
 }
 
