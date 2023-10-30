@@ -40,6 +40,9 @@ html {
 }
 
 @media (width >= 768px) {
+  .caption {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
   .caption_header {
     position: relative;
     inset-inline-start: calc(var(--base-padding) * (-1));
