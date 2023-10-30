@@ -114,7 +114,6 @@ html {
 .header {
   position: relative;
   grid-template-rows: 1fr auto 1fr;
-  border: 1px solid transparent;
   margin-block-end: calc(var(--gap-unit) * 4);
 }
 
