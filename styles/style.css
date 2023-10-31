@@ -447,15 +447,3 @@ html {
     block-size: calc(100% - 5px);
   }
 }
-
-@media (prefers-color-scheme: light) {
-  .theme_auto .header__rec-dot {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .header__rec-dot {
-    display: flex;
-  }
-}

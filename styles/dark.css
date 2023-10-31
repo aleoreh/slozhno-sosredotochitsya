@@ -28,4 +28,8 @@
   .page {
     background-image: url("../images/cover-image-dark.png");
   }
+
+  .header__rec-dot {
+    display: flex;
+  }
 }

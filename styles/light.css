@@ -28,5 +28,8 @@
   .page {
     background-image: url("../images/cover-image-light.png");
   }
-}
 
+  .theme_auto .header__rec-dot {
+    display: none;
+  }
+}
