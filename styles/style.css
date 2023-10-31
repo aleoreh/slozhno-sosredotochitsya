@@ -20,6 +20,7 @@ html {
 
 .full-block {
   display: grid;
+  min-block-size: 668px;
   padding: var(--base-padding);
   block-size: 100vh;
 }
