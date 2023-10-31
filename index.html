@@ -8,6 +8,47 @@
     <title>Сложно сосредоточиться</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./images/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./images/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon-180x180.png"
+    />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -16,8 +57,8 @@
     <link rel="stylesheet" href="./styles/light.css" />
   </head>
   <body class="page">
-    <header class="header decorated-zone full-block bordered">
-      <div class="header__rec-dot" aria-hidden="true">rec <span></span></div>
+    <header class="header decorated-zone full-block">
+      <span class="header__rec-dot" aria-hidden="true">rec</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -44,14 +85,14 @@
           </li>
         </ul>
       </nav>
-      <h2 class="caption caption_header">no focus</h2>
-      <h1 class="header__title title-decor">
-        Что делать, когда не можешь делать ничего<br />Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
-      </h1>
+      <h1 class="caption caption_header">no focus</h1>
+      <p class="header__title title-decor">
+        Что делать, когда не можешь делать ничего<br />Или почему нам так
+        сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
     <main class="main">
-      <section class="case case_1">
+      <section class="case case_why">
         <h2 class="case__title">Почему сосредоточиться так сложно</h2>
         <ul class="case__list">
           <li class="case__item">
@@ -83,7 +124,7 @@
           </li>
         </ul>
       </section>
-      <section class="case case_2">
+      <section class="case case_what">
         <h2 class="case__title">Что снижает концентрацию внимания?</h2>
         <ul class="case__list">
           <li class="case__item">
@@ -122,14 +163,14 @@
           </li>
         </ul>
       </section>
-      <section class="case case_3">
+      <section class="case case_how">
         <h2 class="case__title">
-          Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
-          секунд)
+          Как концентрироваться лучше, чем золотая рыбка (то&nbsp;есть дольше
+          трёх секунд)
         </h2>
         <div class="case__inner">
           <h3 class="case__inner-title title-decor">
-            5 простых (на самом деле не очень) советов
+            5&nbsp;простых (на&nbsp;самом деле не очень) советов
           </h3>
           <ul class="case__inner-list">
             <li class="case__inner-item">
@@ -192,44 +233,46 @@
           </ul>
         </div>
       </section>
-      <section class="case case_4">
-        <h3 class="case__inner-title title-decor">А можно в картинках?</h3>
-        <ul class="case__inner-list">
-          <li class="case__inner-item">
+      <section class="case case_images">
+        <h2 class="case__images-title title-decor">
+          А&nbsp;можно в&nbsp;картинках?
+        </h2>
+        <ul class="case__images-list">
+          <li class="case__image-item">
             <img
-              class="case__inner-image"
+              class="case__image"
               src="./images/sunset.png"
               alt="Рисунок - пурпурный закат на фоне бухты, окружённой горами"
               loading="lazy"
             />
           </li>
-          <li class="case__inner-item">
+          <li class="case__image-item">
             <img
-              class="case__inner-image"
+              class="case__image"
               src="./images/ice-cream.png"
               alt="Рисунок - фруктовое мороженое в миске, в которое поместили недобро выглядывающих оттуда шарообразных существ"
               loading="lazy"
             />
           </li>
-          <li class="case__inner-item">
+          <li class="case__image-item">
             <img
-              class="case__inner-image"
+              class="case__image"
               src="./images/tape.png"
               alt="Рисунок - аудио компакт кассета, окружённая элементами пользовательского интерфейса"
               loading="lazy"
             />
           </li>
-          <li class="case__inner-item">
+          <li class="case__image-item">
             <img
-              class="case__inner-image"
+              class="case__image"
               src="./images/books.png"
               alt="Рисунок - стопка книг, на которую поставили чашку с напитком"
               loading="lazy"
             />
           </li>
-          <li class="case__inner-item">
+          <li class="case__image-item">
             <img
-              class="case__inner-image case__inner-image_cropped"
+              class="case__image case__image_cropped"
               src="./images/street.png"
               alt="Рисунок - японская улочка с аккуратными двухэтажными домиками в пурпурных тонах"
               loading="lazy"
@@ -238,7 +281,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer full-block bordered">
+    <footer class="footer full-block decorated-zone">
       <h2 class="caption caption_footer">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>

@@ -1,6 +1,7 @@
 .page.theme_dark {
   --bg-color: #000028;
   --decor-color: #ff0070;
+  --decor-color-40: #ff007066;
   --caption-color: #db00ff;
   --caption-shadow-color: #ff0070;
   --accent-bg-color: #ff0070;
@@ -15,6 +16,7 @@
   :root {
     --bg-color: #000028;
     --decor-color: #ff0070;
+    --decor-color-40: #ff007066;
     --caption-color: #db00ff;
     --caption-shadow-color: #ff0070;
     --accent-bg-color: #ff0070;
@@ -25,5 +27,9 @@
 
   .page {
     background-image: url("../images/cover-image-dark.png");
+  }
+
+  .header__rec-dot {
+    display: flex;
   }
 }
