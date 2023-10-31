@@ -1,6 +1,6 @@
 {
   "name": "slozhno-sosredotochitsya",
-  "version": "2.1",
+  "version": "2.2",
   "description": "Проектная работа «Сложно сосредоточиться»",
   "scripts": {
     "live-server": "live-server --no-browser"
